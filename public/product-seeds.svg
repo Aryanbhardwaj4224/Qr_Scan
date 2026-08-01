@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#FAF8F3"/>
+      <stop offset="100%" stop-color="#DCE8D4"/>
+    </linearGradient>
+    <linearGradient id="bowl" x1="0.3" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F0EDE4"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#355E3B" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#355E3B" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="480" rx="40" fill="url(#bg)"/>
+
+  <!-- Surface shadow -->
+  <ellipse cx="240" cy="370" rx="150" ry="28" fill="url(#shadow)"/>
+
+  <!-- Ceramic bowl -->
+  <ellipse cx="240" cy="310" rx="165" ry="42" fill="#E8E4DA"/>
+  <path d="M75 280 C75 220, 140 175, 240 175 C340 175, 405 220, 405 280 L405 310 C405 345, 330 375, 240 375 C150 375, 75 345, 75 310 Z" fill="url(#bowl)"/>
+  <ellipse cx="240" cy="280" rx="155" ry="38" fill="#FFFFFF" opacity="0.6"/>
+  <path d="M95 285 C120 255, 175 240, 240 240 C305 240, 360 255, 385 285" stroke="#DCE8D4" stroke-width="3" fill="none" opacity="0.8"/>
+
+  <!-- Pumpkin seeds -->
+  <g filter="url(#soft)">
+    <ellipse cx="175" cy="268" rx="14" ry="22" fill="#C4A035" transform="rotate(-25 175 268)"/>
+    <ellipse cx="175" cy="268" rx="10" ry="16" fill="#E8C547" transform="rotate(-25 175 268)"/>
+    <ellipse cx="205" cy="255" rx="13" ry="20" fill="#B8942E" transform="rotate(15 205 255)"/>
+    <ellipse cx="205" cy="255" rx="9" ry="14" fill="#E8C547" transform="rotate(15 205 255)"/>
+    <ellipse cx="240" cy="248" rx="14" ry="22" fill="#C4A035" transform="rotate(-8 240 248)"/>
+    <ellipse cx="240" cy="248" rx="10" ry="16" fill="#F0D060" transform="rotate(-8 240 248)"/>
+    <ellipse cx="275" cy="255" rx="13" ry="20" fill="#B8942E" transform="rotate(30 275 255)"/>
+    <ellipse cx="275" cy="255" rx="9" ry="14" fill="#E8C547" transform="rotate(30 275 255)"/>
+    <ellipse cx="305" cy="268" rx="14" ry="22" fill="#C4A035" transform="rotate(-20 305 268)"/>
+    <ellipse cx="305" cy="268" rx="10" ry="16" fill="#E8C547" transform="rotate(-20 305 268)"/>
+    <ellipse cx="190" cy="285" rx="12" ry="18" fill="#B8942E" transform="rotate(40 190 285)"/>
+    <ellipse cx="190" cy="285" rx="8" ry="13" fill="#F0D060" transform="rotate(40 190 285)"/>
+    <ellipse cx="290" cy="285" rx="12" ry="18" fill="#C4A035" transform="rotate(-35 290 285)"/>
+    <ellipse cx="290" cy="285" rx="8" ry="13" fill="#E8C547" transform="rotate(-35 290 285)"/>
+    <ellipse cx="240" cy="278" rx="13" ry="20" fill="#B8942E" transform="rotate(5 240 278)"/>
+    <ellipse cx="240" cy="278" rx="9" ry="14" fill="#F0D060" transform="rotate(5 240 278)"/>
+    <ellipse cx="220" cy="295" rx="11" ry="17" fill="#C4A035" transform="rotate(-15 220 295)"/>
+    <ellipse cx="260" cy="295" rx="11" ry="17" fill="#C4A035" transform="rotate(20 260 295)"/>
+  </g>
+
+  <!-- Chia seeds cluster -->
+  <g opacity="0.95">
+    <circle cx="155" cy="310" r="4.5" fill="#355E3B"/>
+    <circle cx="168" cy="318" r="4" fill="#2A4A30"/>
+    <circle cx="148" cy="322" r="3.5" fill="#355E3B"/>
+    <circle cx="162" cy="328" r="4" fill="#355E3B"/>
+    <circle cx="175" cy="315" r="3.5" fill="#2A4A30"/>
+    <circle cx="325" cy="310" r="4.5" fill="#355E3B"/>
+    <circle cx="312" cy="318" r="4" fill="#2A4A30"/>
+    <circle cx="332" cy="322" r="3.5" fill="#355E3B"/>
+    <circle cx="318" cy="328" r="4" fill="#355E3B"/>
+    <circle cx="305" cy="315" r="3.5" fill="#2A4A30"/>
+  </g>
+
+  <!-- Accent leaf -->
+  <path d="M240 130 C220 105, 195 95, 185 110 C195 100, 215 98, 240 115 C265 98, 285 100, 295 110 C285 95, 260 105, 240 130Z" fill="#355E3B" opacity="0.85"/>
+  <path d="M240 115 L240 145" stroke="#2A4A30" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Brand accent line -->
+  <rect x="190" y="400" width="100" height="3" rx="1.5" fill="#E8892E" opacity="0.7"/>
+</svg>
