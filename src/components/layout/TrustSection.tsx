@@ -5,7 +5,6 @@ import {
   FaHeartPulse,
   FaCertificate,
   FaTruck,
-  FaUsers,
 } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import type { IconType } from 'react-icons';
@@ -24,7 +23,6 @@ const trustItems: TrustItem[] = [
   { icon: FaHeartPulse, label: 'Healthy Lifestyle', description: 'Daily nutrition' },
   { icon: FaCertificate, label: 'FSSAI Certified', description: 'Quality assured' },
   { icon: FaTruck, label: 'Free Shipping', description: 'Across India' },
-  { icon: FaUsers, label: '10,000+ Happy Customers', description: 'Trusted nationwide' },
 ];
 
 /**

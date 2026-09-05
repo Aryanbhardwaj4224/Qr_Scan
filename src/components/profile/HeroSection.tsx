@@ -60,8 +60,8 @@ export default function HeroSection() {
 
           <div className="h-1 w-12 rounded-full bg-[var(--color-accent)]" />
 
-          <p className="max-w-[19rem] text-[1.0625rem] leading-[1.65] text-[var(--color-text-secondary)]">
-            Premium pumpkin & chia seeds for a healthier lifestyle.
+          <p className="max-w-[21rem] text-[0.9375rem] leading-[1.6] text-[var(--color-text-secondary)] px-2">
+            {profile.bio}
           </p>
         </div>
       </div>

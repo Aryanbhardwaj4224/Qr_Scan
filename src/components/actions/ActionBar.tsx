@@ -114,12 +114,6 @@ export default function ActionBar({ onToast }: ActionBarProps) {
       },
     },
     {
-      id: 'qr',
-      label: 'Share QR',
-      icon: FaQrcode,
-      onClick: () => setQrOpen(true),
-    },
-    {
       id: 'save',
       label: 'Save Contact',
       icon: FaAddressCard,
@@ -129,8 +123,6 @@ export default function ActionBar({ onToast }: ActionBarProps) {
       },
     },
   ];
-
-  const gridActions = actions.slice(0, 6);
 
   return (
     <motion.div
@@ -146,10 +138,13 @@ export default function ActionBar({ onToast }: ActionBarProps) {
         <h3 className="mt-2 font-serif text-[1.375rem] font-bold text-[var(--color-forest)]">
           Get in Touch
         </h3>
+        <p className="mt-1.5 text-xs font-semibold text-[var(--color-text-secondary)]">
+          Contact: 7014565584
+        </p>
       </div>
 
       <div className="grid grid-cols-2 gap-3.5">
-        {gridActions.map((action, index) => {
+        {actions.map((action, index) => {
           const { icon: Icon, label, href, onClick, accent, id } = action;
           const content = (
             <>
@@ -192,6 +187,16 @@ export default function ActionBar({ onToast }: ActionBarProps) {
             </motion.button>
           );
         })}
+      </div>
+
+      <div className="mt-5 flex justify-center border-t border-[var(--color-border-card)] pt-4">
+        <button
+          onClick={() => setQrOpen(true)}
+          className="inline-flex items-center gap-2 rounded-full bg-[var(--color-olive)]/35 px-4 py-2 text-xs font-bold uppercase tracking-wider text-[var(--color-forest)] hover:bg-[var(--color-olive)]/60 transition-all duration-200"
+        >
+          <FaQrcode size={14} className="text-[var(--color-accent)]" />
+          Show QR Code
+        </button>
       </div>
 
       {/* QR Code Modal */}

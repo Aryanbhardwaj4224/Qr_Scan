@@ -10,6 +10,7 @@ import Toast from './components/ui/Toast';
 import PageWrapper from './components/layout/PageWrapper';
 import SiteHeader from './components/layout/SiteHeader';
 import HeroSection from './components/profile/HeroSection';
+import ProductSection from './components/layout/ProductSection';
 import SocialLinks from './components/links/SocialLinks';
 import ActionBar from './components/actions/ActionBar';
 import TrustSection from './components/layout/TrustSection';
@@ -39,6 +40,7 @@ function App() {
         >
           <SiteHeader />
           <HeroSection />
+          <ProductSection />
           <TrustSection />
           <SocialLinks />
           <ActionBar onToast={showToast} />
